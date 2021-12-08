@@ -25,6 +25,7 @@ $morse = {
 "-..-" => "X",
 "-.--" => "Y",
 "--.." => "Z",
+"/" => " ",
 }
 
 def decode_char(char)
@@ -40,5 +41,16 @@ def decode_word(word)
   return decodedWord
 end
 
+
+def decode_message(message)
+  array0fCharacters = message.split("   ");
+  decodedWord = [];
+  array0fCharacters.each do |char|
+    decodedWord.push(decode_word(char));
+  end
+  return decodedWord.join(' ')
+end
+
 puts decode_char('...')
 puts decode_word("-- -.--")
+puts decode_message(".-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-. / .-. ..- -... .. . ...")
