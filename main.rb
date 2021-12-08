@@ -31,4 +31,14 @@ def decode_char(char)
   $morse[char]
 end
 
+def decode_word(word)
+  array0fCharacters = word.split(" ");
+  decodedWord = '';
+  array0fCharacters.each do |char|
+    decodedWord += decode_char(char);
+  end
+  return decodedWord
+end
+
 puts decode_char('...')
+puts decode_word("-- -.--")
