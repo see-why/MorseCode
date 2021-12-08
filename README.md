@@ -14,8 +14,8 @@ A program in Ruby that decrypts Morse Code into plain English.
 - **$ git clone https://github.com/...**
 - **$ cd ...**
 - **$ git checkout ...**
-- **$ run bundle install to couple all dependacies**
-- **$ run ruby main.rb**
+- **$ run `bundle install` to couple all dependacies**
+- **$ run `ruby main.rb`**
 
 👤 **Cyril Iyadi**
 
