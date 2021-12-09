@@ -1,5 +1,3 @@
-
-
 require './enumerable.rb'
 
 class MyList 
@@ -8,7 +6,7 @@ class MyList
     @list = args
   end
 end
-s
+
 l = MyList.new(1,2,3)
 puts l.all { |x| x > 1}
 
